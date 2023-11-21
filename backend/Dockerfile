@@ -15,7 +15,7 @@ RUN pip install poetry
 RUN poetry config virtualenvs.create false
 
 # Install project dependencies
-RUN poetry install --no-dev
+RUN poetry install
 
 # Copy the current directory contents into the container at /app
 COPY ./ /app/
